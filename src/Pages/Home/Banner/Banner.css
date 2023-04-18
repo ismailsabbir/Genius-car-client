@@ -1,0 +1,82 @@
+.carouselss{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+.carousel-itemss{
+    height: 550px;
+    border-radius: 8px;
+}
+
+.img-gradient img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: block;
+}
+.carousel-itemss{
+    position: relative;
+}
+.carousel-text{
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    text-align: left;
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.carousel-text h1,p{
+    text-align: left;
+}
+.discover-btn{
+    background-color: tomato;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 15px;
+}
+.img-gradient:after {
+    content:'';
+    position:absolute;
+    left:0; 
+    top:0;
+    width:100%; 
+    height:100%;
+    display:inline-block;
+    border-radius: 10px;
+    background: linear-gradient(to right, #4c4c4c 0%,rgba(81, 81, 81, 0) 100%); /* W3C */
+  }
+  @media only screen and (max-width:992px){
+    .carousel-itemss{
+        /* border: 2px solid brown; */
+        height: auto;
+        position: relative;
+    }
+    .carousel-text{
+        width: 70%;
+        /* border: 1px solid brown; */
+        position: absolute;
+        top: 5px;
+    }
+    .carousel-text h1{
+        font-size: 1.1rem;
+    }
+    .carousel-text p{
+        display: none;
+    }
+    .discover-btn{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .banner-btn-con{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+  }

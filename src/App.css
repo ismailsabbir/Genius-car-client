@@ -1,7 +1,17 @@
 .App {
   text-align: center;
 }
-
+.main-container{
+  width: 90%;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+}
+@media only screen and (max-width:992px){
+  .main-container{
+    width: 95%;
+    border: 1px solid gray;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

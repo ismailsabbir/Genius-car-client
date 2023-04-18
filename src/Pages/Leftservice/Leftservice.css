@@ -1,0 +1,50 @@
+.service-image{
+    width: 100%;
+
+}
+.service-image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.facility{
+    border: 1px solid gainsboro;
+    padding:10px ;
+    border-radius: 8px;
+    margin:20px;
+    background-color: aliceblue;
+    align-items: center;
+}
+.facility h6{
+    margin-bottom: 10px;
+}
+.details-text h4{
+margin-bottom: 20px;
+}
+.details-text p{
+    text-align: justify;
+
+}
+.service-check{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width:992px){
+.details-text{
+    /* border: 1px solid brown; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.facility-container{
+    width: 90%;
+}
+.facility{
+    width: 100%;
+    /* border: 1px solid goldenrod; */
+}
+
+}

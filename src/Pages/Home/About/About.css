@@ -1,0 +1,81 @@
+.about-container{
+    /* border: 1px solid brown; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    height: auto;
+    margin-bottom: 80px;
+}
+.about-leftss{
+    width: 40%;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.person-imgss{
+    width: 60%;
+    height: 300px;
+    border-radius: 10px;
+}
+.parts-imgss{
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+.about-rights{
+    width: 60%;
+    /* border: 1px solid gold; */
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.about-rights h6{
+    color: tomato;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-rights h3{
+    font-size: 1.5rem;
+}
+.about-rights p{
+    text-align: justify;
+    font-size: 16px;
+    /* font-weight: 500; */
+    color: rgb(70, 69, 69);
+}
+.about-btn{
+    margin-top: 10px;
+}
+@media only screen and (max-width:992px){
+    .about-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-leftss{
+        /* border: 1px solid brown; */
+        width: 90%;
+        position: relative;
+        margin-bottom: 80px;
+    }
+    .person-imgss{
+        width: 80%;
+    }
+    
+    .parts-imgss{
+        position: absolute;
+        width: 50%;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+
+    }
+    .about-rights{
+        padding: 0;
+    }
+}

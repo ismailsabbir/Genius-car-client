@@ -1,0 +1,72 @@
+.team-container{
+    /* border: 1px solid brown; */
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.team-head{
+    /* width: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.team-head h6{
+    color: tomato;
+    font-size: 16px;
+    font-weight: 500;
+}
+.team-head h5{
+    margin-bottom: 15px;
+}
+.team-head p{
+    line-height: 1.1;
+    font-size: 16px;
+}
+.team{
+    width: 350px;
+    border: 1px solid gainsboro;
+    padding: 8px;
+    border-radius: 8px;
+}
+.member-img{
+    border-radius: 8px;
+}
+.member-img img{
+    border-radius: 8px;
+}
+.member-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.member-info h5{
+    margin-top: 10px;
+    color: rgb(33, 33, 33);
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.member-info p{
+    font-size: 12px;
+    color: rgb(59, 59, 59);
+    font-weight: 600;
+}
+.member-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-icon{
+    /* color: tomato; */
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+@media only screen and (max-width:992px){
+    .team-head p{
+        text-align: center;
+    }
+}

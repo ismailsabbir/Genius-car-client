@@ -1,0 +1,42 @@
+.product-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.product-head h6{
+    color: tomato;
+    font-size: 1.0rem;
+}
+.product-head h4{
+    margin-bottom: 15px;
+}
+.product-head p{
+    line-height: 1.1;
+    font-size: 16px;
+}
+.product-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.moreproduct-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px ;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width:992px){
+    .product-head p{
+        text-align: center;
+    }
+    .product-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,29 @@
+.navbar-container{
+    width: 100%;
+}
+.nav-logo{
+    width: 60px;
+    height: 60px;
+}
+.nav-item-container{
+    margin: 0 auto;
+}
+.nav-item{
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.nav-end-item{
+    display: flex;
+    align-items: center;
+}
+.nav-icon{
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+.nav-btn{
+    width: 160px;
+    margin-left: 10px;
+}

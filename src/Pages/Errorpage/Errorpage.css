@@ -1,0 +1,12 @@
+.error-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.error-link{
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.5rem;
+    font-weight: 7oo;
+}

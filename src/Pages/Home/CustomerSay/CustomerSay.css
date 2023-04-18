@@ -1,0 +1,69 @@
+.customer-container{
+    margin-bottom: 70px;
+}
+.customer-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.customer-head h6{
+    color: tomato;
+    font-size: 14px;
+    font-weight: 500;
+}
+.customer-head h4{
+    margin-bottom: 20px;
+}
+.customer-head p{
+    line-height: 1.1;
+    font-size: 16px;
+    color: rgb(73, 72, 72);
+}
+.person1{
+    border: 1px solid gainsboro;
+    padding: 40px 30px;
+    border-radius: 8px;
+    width: 570px;
+}
+.customer-info-top{
+    display: flex;
+}
+.customer-info-top img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.name-profession{
+    line-height: 1;
+}
+.name-profession p{
+    font-size: 16px;
+    color: rgb(109, 108, 108);
+    font-weight: 500;
+}
+.says{
+    line-height: 1.2;
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(37, 37, 37);
+    /* font-weight: 500; */
+}
+.customer-rating{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+}
+ @media only screen and (max-width:992px){
+    .customer-head p{
+        text-align: center;
+    }
+    .person1{
+        /* border: 1px solid gray; */
+        width: 100%;
+    }
+}
