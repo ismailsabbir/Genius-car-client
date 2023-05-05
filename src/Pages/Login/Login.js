@@ -22,9 +22,25 @@ const Login = () => {
     .then(req=>{
       const userinfo=req.user;
       console.log(userinfo);
-      navigate('/home');
+      const currentuser={
+        email:userinfo.email
+      }
+      fetch('https://genius-car-server-sepia-eight.vercel.app/jwt',{
+        method: 'POST',
+        body: JSON.stringify(currentuser),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(req=>req.json())
+      .then(data=>{
+        console.log(data);
+        localStorage.setItem('genius_token', data.token);
+        navigate('/home');
+      })
+
     })
-    .then(error=>{
+    .catch(error=>{
       console.error(error);
     })
     

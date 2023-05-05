@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './Rightservices.css';
 import Button from 'react-bootstrap/Button';
-import { BsArrowRightShort } from "react-icons/bs";
+// import { BsArrowRightShort } from "react-icons/bs";
 import imge from '../../../src/images/logo.svg'
 import { Link } from 'react-router-dom';
 const Rightservices = () => {
     const[service,setservice]=useState([]);
-    fetch('http://localhost:5000/services')
+    // const service=services.users;
+    console.log(service);
+    fetch('https://genius-car-server-ismailsabbir.vercel.app/services')
     .then(req=>req.json())
     .then(data=>setservice(data))
     return (

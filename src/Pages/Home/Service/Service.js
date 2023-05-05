@@ -4,7 +4,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 const Service = (props) => {
     const service=props.service;
-    console.log(service);
+    // console.log(service);
     return (
         <div className='service'>
         <div className='service-img'>

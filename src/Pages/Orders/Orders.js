@@ -4,14 +4,30 @@ import imge from '../../../src/images/images/clean1.jpg';
 import './Order.css';
 import { Button } from 'react-bootstrap';
 const Orders = () => {
-    const{users}=useContext(Authcontext);
+    const{users,logoutuser}=useContext(Authcontext);
     const[order,setorder]=useState([]);
     console.log(order);
+    // token
+    console.log(localStorage.getItem('genius_token'));
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders?email=${users.email}`)
-        .then(req=>req.json())
-        .then(data=>setorder(data))
-    },[users?.email]);
+        fetch(`https://genius-car-server-sepia-eight.vercel.app/orders?email=${users.email}`,{
+            headers:
+            {
+                authorization:`Bearer ${localStorage.getItem('genius_token')}`
+            }
+        })
+        .then(req=>{
+            if(req.status===401 || req.status===403){
+                return logoutuser()
+            }
+            return req.json()
+        })
+        .then(data=>{
+            // console.log(data);
+            setorder(data)
+        })
+    },[users?.email,logoutuser]);
+
     // const[displayorder,setdisplayorder]=useState(order);
     // console.log(displayorder);
     const delatehandler=(id)=>{

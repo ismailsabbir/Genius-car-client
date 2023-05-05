@@ -28,7 +28,7 @@ function App() {
           path:`/services/:id`,
           element:<Servicespage></Servicespage>,
           loader:async({params})=>{
-            return fetch(`http://localhost:5000/services/${params.id}`)
+            return fetch(`https://genius-car-server-sepia-eight.vercel.app/services/${params.id}`)
           }
         },
         {
@@ -43,7 +43,7 @@ function App() {
           path:`/checkout/:id`,
           element:<Checkout></Checkout>,
           loader:async({params})=>{
-            return fetch(`http://localhost:5000/checkout/${params.id}`);
+            return fetch(`https://genius-car-server-sepia-eight.vercel.app/checkout/${params.id}`);
           }
         },
         {

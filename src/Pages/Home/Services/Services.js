@@ -3,9 +3,9 @@ import './Services.css';
 import Service from '../Service/Service';
 const Services = () => {
     const [services,setservices]=useState([]);
-    fetch('http://localhost:5000/services')
+    fetch('https://genius-car-server-sepia-eight.vercel.app/services')
     .then(res=>res.json())
-    .then(data=>setservices(data))
+    .then(data=>setservices(data.users))
     return (
         <div>
             <div className='service-head'>

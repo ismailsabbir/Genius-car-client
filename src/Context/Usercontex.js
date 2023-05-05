@@ -17,6 +17,7 @@ const Usercontex = ({children}) => {
         return signInWithPopup(auth,provider);
     }
     const logoutuser=()=>{
+        localStorage.removeItem('genius_token')
         return signOut(auth);
     }
     const updateusername=(name)=>{

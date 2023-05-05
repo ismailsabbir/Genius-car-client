@@ -24,7 +24,7 @@ const Checkout = () => {
         let date = new Date().toLocaleDateString();
         const orderinfo={firstname,lastname,mobile,email,title,price, message,imge,date};
         console.log(orderinfo);
-        fetch('http://localhost:5000/orders',{
+        fetch('https://genius-car-server-sepia-eight.vercel.app/orders',{
           method : 'post',
           headers :{ 'Content-Type' : 'application/json'},
           body : JSON.stringify(orderinfo)

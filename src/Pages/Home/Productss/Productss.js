@@ -4,7 +4,7 @@ import './Productss.css';
 import Product from '../Product/Product';
 const Productss = () => {
     const[productss,setproductss]=useState([]);
-    fetch('http://localhost:5000/products')
+    fetch('https://genius-car-server-sepia-eight.vercel.app/products')
     .then(res=>res.json())
     .then(data=>setproductss(data));
     return (
